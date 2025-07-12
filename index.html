@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Interactivo - Media Maratón Gijón 2025</title>
+    
+    <!-- Enlace a la hoja de estilos externa -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Enlaces para la fuente de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Plan de Entrenamiento Interactivo</h1>
+            <p>Objetivo: Media Maratón de Gijón - 11 de Octubre de 2025</p>
+        </header>
+
+        <div class="legend">
+            <div class="legend-item"><div class="legend-color" style="background-color: var(--color-series);"></div>Series</div>
+            <div class="legend-item"><div class="legend-color" style="background-color: var(--color-tempo);"></div>Tempo</div>
+            <div class="legend-item"><div class="legend-color" style="background-color: var(--color-suave);"></div>Rodaje Suave</div>
+            <div class="legend-item"><div class="legend-color" style="background-color: var(--color-larga);"></div>Tirada Larga</div>
+            <div class="legend-item"><div class="legend-color" style="background-color: var(--color-descanso);"></div>Activación/Desc.</div>
+            <div class="legend-item"><div class="legend-color" style="background-color: var(--color-carrera);"></div>¡Carrera!</div>
+        </div>
+
+        <div class="calendar-grid" id="calendar-grid">
+            <!-- El calendario se generará aquí con JavaScript -->
+        </div>
+    </div>
+
+    <!-- The Modal (Ventana Emergente) -->
+    <div id="workout-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Detalles del Entrenamiento</h2>
+                <span class="close-button">&times;</span>
+            </div>
+            <p id="modal-details"></p>
+        </div>
+    </div>
+
+    <!-- Enlace al script de JavaScript. 'defer' asegura que se ejecute después de cargar el HTML -->
+    <script src="script.js" defer></script>
+</body>
+</html>
