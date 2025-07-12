@@ -12,8 +12,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-	<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"></script>
 </head>
 <body>
 
@@ -44,16 +42,7 @@
                 <h2 id="modal-title">Detalles del Entrenamiento</h2>
                 <span class="close-button">&times;</span>
             </div>
-            <div class="modal-body">
-				<label for="modal-title-input">Título</label>
-				<input type="text" id="modal-title-input" />
-
-				<label for="modal-details-input">Detalles</label>
-				<textarea id="modal-details-input"></textarea>
-			</div>
-			<div class="modal-footer">
-				<button id="save-button">Guardar cambios</button>
-			</div>
+            <p id="modal-details"></p>
         </div>
     </div>
 
